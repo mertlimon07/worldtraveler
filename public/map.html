@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Traveler | Global Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+
+    <div class="ui-overlay">
+        <div class="user-badge">
+            <span class="welcome-text">EXPLORER</span>
+            <h2 id="display-username">Loading...</h2>
+        </div>
+        <button id="logout-btn" onclick="logout()">LOGOUT</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div id="modal" class="modal hidden">
+        <div class="glass-panel">
+            <div class="modal-header">
+                <h3>NEW MEMORY</h3>
+                <p>Capture the moment</p>
+            </div>
+            
+            <div class="input-group">
+                <textarea id="memory-text" placeholder="Write your story here..."></textarea>
+            </div>
+
+            <div class="file-upload-wrapper">
+                <label for="memory-photo" class="custom-file-upload">
+                    Choose Photo
+                </label>
+                <input type="file" id="memory-photo">
+                <span id="file-name">No file chosen</span>
+            </div>
+
+            <div class="modal-actions">
+                <button onclick="saveMemory()" class="btn-save">SAVE RECORD</button>
+                <button onclick="closeModal()" class="btn-cancel">CANCEL</button>
+            </div>
+        </div>
+    </div>
+    <div id="lightbox" class="lightbox hidden" onclick="closeLightbox()">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
