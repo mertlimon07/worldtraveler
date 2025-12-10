@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1765029738807,
+    "username": "john",
+    "text": "anilarim",
+    "lat": 46.620633081591336,
+    "lng": 45.3515625,
+    "photoUrl": null
+  },
+  {
+    "id": 1765029751061,
+    "username": "john",
+    "text": "sdfsdf",
+    "lat": 55.72587120850073,
+    "lng": 40.25390625000001,
+    "photoUrl": "/uploads/1765029751058-envanter.PNG"
+  },
+  {
+    "id": 1765030007157,
+    "username": "john",
+    "text": "adsdsa",
+    "lat": 57.7071464125194,
+    "lng": 96.50390625000001,
+    "photoUrl": null
+  }
+]
